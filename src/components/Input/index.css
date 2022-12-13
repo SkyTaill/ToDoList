@@ -1,0 +1,14 @@
+.input {
+    font-size: 20px;
+    border: 2px solid rgb(22, 125, 255);
+    height: 50px;
+    width: 300px;
+}
+
+.input:valid {
+    border-color: rgb(22, 125, 255);
+}
+
+.input:invalid {
+    border-color: #FF4F46;
+}
