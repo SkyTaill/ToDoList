@@ -1,8 +1,44 @@
-.item {
-    width: 200px;
-    height: 30px;
-    font-size: 15px;
-    border: 1px solid black;
-    margin: 5px;
-    background: green;
+.items {
+    background-color: rgb(95, 156, 230);
+    height: 55px;
+    width: 500px;
+    padding-bottom: 4px;
+
+}
+
+.forms {
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.item_done {
+    background-color: rgb(255, 0, 0);
+    height: 55px;
+    width: 500px;
+    padding-bottom: 4px;
+}
+
+.item_btn {
+    color: #ffffff;
+    background: rgb(22, 125, 255);
+    padding: 6px 16px;
+    margin: 8px;
+    height: 55px;
+    width: 140px;
+    margin-top: 1px;
+    border-width: 0px;
+    border-radius: 3px;
+}
+
+.item_btn_done {
+    color: #ffffff;
+    background: rgb(245, 5, 5);
+    padding: 6px 16px;
+    margin: 8px;
+    height: 55px;
+    width: 140px;
+    margin-top: 1px;
+    border-width: 0px;
+    border-radius: 3px;
 }

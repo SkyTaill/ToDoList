@@ -36,7 +36,17 @@ class App extends React.Component {
     });
   }
 
+  onRemoveTodo = (todoName) => {
+    const { todoList } = this.state;
+    //получаем индекс по имени
+    const todoIndex = todoList.findIndex((str) => str === todoName);
+    console.log(todoIndex);
+    const newTodoList = [...todoList.slice(0, todoIndex), ...todoList.slice(todoIndex + 1)]
+    this.setState({
+      todoList: newTodoList,
 
+    })
+  }
 
   render() {
     // const { text, inputValue } = this.state;
@@ -57,10 +67,15 @@ class App extends React.Component {
         </div>
 
         <div className='table'>
-          {todoList.map((todoStr) => {
+          {todoList.map((todoStr, id) => {
+            // console.log(id, todoStr)
             return (
               <ListItem
+
                 todoName={todoStr}
+                remove={this.onRemoveTodo}
+                //key не будет являться пропсом , он устанавливается на каждый элемент
+                key={id}
               />)
           })}
 
