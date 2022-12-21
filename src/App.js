@@ -3,6 +3,8 @@ import React from 'react';
 import './App.css';
 
 import Main from './components/Main';
+import SimpleHOC from './components/Ex';
+import { InputWithNameValidation, InputWithNameAndEmailValidation } from "./components/ExValid/withRequired"
 function App() {
   //<Header isLogged={isLogged} />
 
@@ -12,7 +14,17 @@ function App() {
       <header>
         <h1>TODO list</h1>
       </header>
-      <Main />
+
+      <SimpleHOC />
+
+
+      <br />
+      <InputWithNameValidation />
+      <br />
+      <InputWithNameAndEmailValidation />
+
+
+
       <footer>
       </footer>
     </div>
