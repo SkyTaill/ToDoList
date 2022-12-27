@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css';
-
+import Routing from './components/routing/routing'
 import Main from './components/Main';
 function App() {
   //<Header isLogged={isLogged} />
@@ -13,6 +13,7 @@ function App() {
         <h1>TODO list</h1>
       </header>
       <Main />
+      <Routing />
       <footer>
       </footer>
     </div>
